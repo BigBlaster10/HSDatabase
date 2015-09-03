@@ -46,12 +46,12 @@ public class Card {
 	
 	public BufferedImage getImage() {
 		try {
-			return ImageIO.read(new File("C:\\Users\\Thomas\\Pictures\\HearthstoneCards\\" + this.image.toString()));
+			return ImageIO.read(new File("Cards\\" + this.image.toString()));
 		} catch (IOException e) {
 			//e.printStackTrace();
 		}
 	    System.out.println("ERROR: File not found");
-		System.out.println("C:\\Users\\Thomas\\Pictures\\HearthstoneCards\\" + this.image.toString());
+		System.out.println("Cards\\" + this.image.toString());
 		return null;
 		
 	}
