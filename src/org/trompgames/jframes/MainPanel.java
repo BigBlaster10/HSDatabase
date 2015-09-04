@@ -21,7 +21,7 @@ public class MainPanel extends JPanel{
 		int y = 0;
 		
 		for(Card card : Card.cards){
-
+			
 			BufferedImage image = card.getImage();
 			
 			g2d.drawImage(image, x, y, null);

@@ -17,6 +17,6 @@ public class MainDatabase {
 			e.printStackTrace();
 		}
 		new MainFrame();
-
+		System.out.println(Card.cards.size());
 	}
 }
