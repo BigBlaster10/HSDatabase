@@ -23,6 +23,8 @@ public class CardInsertPanel extends JPanel{
 	JComboBox hero;
 
 	JButton button;
+	JButton file;
+
 	
 	String[] cardTypes = {"Weapon", "Spell", "Minion"};
 	String[] rarities = {"Basic", "Common", "Rare", "Epic"};
@@ -30,7 +32,7 @@ public class CardInsertPanel extends JPanel{
 
 	public CardInsertPanel(){
 		
-		this.setLayout(new GridLayout(6, 5, 20, 10));	
+		this.setLayout(new GridLayout(9, 5, 20, 10));	
 		
 		cardType = new JComboBox(cardTypes);
 		rarity = new JComboBox(rarities);
@@ -38,6 +40,9 @@ public class CardInsertPanel extends JPanel{
 
 		button = new JButton();
 		button.setText("Create");
+		
+		file = new JButton();
+		file.setText("Open File...");
 		
 		name = new JTextField(10);		
 		name.setText("Name");
@@ -50,6 +55,8 @@ public class CardInsertPanel extends JPanel{
 		this.add(name);
 		this.add(lore);
 
+		this.add(file);
+		
 		this.add(cardType);
 		this.add(rarity);
 		this.add(hero);
