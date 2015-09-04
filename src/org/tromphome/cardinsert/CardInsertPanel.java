@@ -3,6 +3,7 @@ package org.tromphome.cardinsert;
 import java.awt.Graphics;
 import java.awt.GridLayout;
 
+import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -13,10 +14,15 @@ public class CardInsertPanel extends JPanel{
 	
 	JComboBox cardType; 
 	JComboBox rarity;
+	
 	JTextField name;
 	JTextField lore;
+	
+	//https://docs.oracle.com/javase/tutorial/uiswing/components/filechooser.html
+	
 	JComboBox hero;
 
+	JButton button;
 	
 	String[] cardTypes = {"Weapon", "Spell", "Minion"};
 	String[] rarities = {"Basic", "Common", "Rare", "Epic"};
@@ -24,12 +30,14 @@ public class CardInsertPanel extends JPanel{
 
 	public CardInsertPanel(){
 		
-		this.setLayout(new GridLayout(5, 5, 10, 10));	
+		this.setLayout(new GridLayout(6, 5, 20, 10));	
 		
 		cardType = new JComboBox(cardTypes);
 		rarity = new JComboBox(rarities);
 		hero = new JComboBox(heros);	
 
+		button = new JButton();
+		button.setText("Create");
 		
 		name = new JTextField(10);		
 		name.setText("Name");
@@ -46,6 +54,7 @@ public class CardInsertPanel extends JPanel{
 		this.add(rarity);
 		this.add(hero);
 		
+		this.add(button);
 		
 	}
 	
