@@ -1,12 +1,4 @@
 SPELL,BASIC,4,MAGE,"Fireball","Deal 6 damage.","Fireball.png"
 SPELL,BASIC,2,MAGE,"Frostbolt","Deal 3 damage to a character and Freeze it.","Frostbolt.png"
 SPELL,BASIC,1,MAGE,"Mirror Image", "Summon two 0/2 minions with Taunt","Mirror_Image.png"
-
-
-
-
-
-
-
-
-
+MINION,BASIC,4,MAGE,"Water Elemental","Freeze any character damaged by this minion.","Water_Elemental.png"

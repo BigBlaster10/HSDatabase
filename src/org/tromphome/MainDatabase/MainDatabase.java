@@ -14,7 +14,7 @@ public class MainDatabase {
 		try {
 			Reader.loadCards(new File("cards.txt"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+			// TODO Auto-generated catch blockt
 			e.printStackTrace();
 		}
 		new MainFrame();

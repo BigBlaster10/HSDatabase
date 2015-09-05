@@ -80,6 +80,9 @@ public class Card {
 		return lore;
 	}
 	
+	public File getFile(){
+		return image;
+	}
 	
 	
 	

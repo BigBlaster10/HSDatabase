@@ -15,7 +15,7 @@ public enum Hero {
 	
 	public static Hero getHero(String s){
 		for(Hero hero : Hero.values()){
-			if(hero.toString().equals(s)) return hero;
+			if(hero.toString().toLowerCase().equals(s.toLowerCase())) return hero;
 		}
 		return null;
 	}

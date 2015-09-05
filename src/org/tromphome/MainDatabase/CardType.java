@@ -9,7 +9,7 @@ public enum CardType {
 	
 	public static CardType getCard(String s){
 		for(CardType type : CardType.values()){
-			if(type.toString().equals(s)) return type;
+			if(type.toString().toLowerCase().equals(s.toLowerCase())) return type;
 		}
 		return null;
 	}
