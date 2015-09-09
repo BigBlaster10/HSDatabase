@@ -7,6 +7,8 @@ import java.util.ArrayList;
 
 import javax.imageio.ImageIO;
 
+import org.tromphome.utils.Location;
+
 public class Card {
 
 	private File image;
@@ -17,6 +19,8 @@ public class Card {
 	private Hero hero;
 	private String name;
 	private String lore;
+	
+	private Location loc;
 	
 	public static ArrayList<Card> cards = new ArrayList<Card>();
 	
@@ -84,8 +88,13 @@ public class Card {
 		return image;
 	}
 	
+	public void setLocation(Location loc){
+		this.loc = loc;
+	}
 	
-	
+	public Location getLocation(){
+		return loc;
+	}
 	
 	
 }
