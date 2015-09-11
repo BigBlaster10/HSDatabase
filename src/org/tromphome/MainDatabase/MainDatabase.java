@@ -21,9 +21,12 @@ public class MainDatabase {
 			e.printStackTrace();
 		}
 		JFrame frame = new MainFrame();
+		System.out.println("" + Card.cards.get(0).getImage().getWidth());
+
 		while(true){
 			frame.repaint();
 		}
+		
 		
 	}
 }
